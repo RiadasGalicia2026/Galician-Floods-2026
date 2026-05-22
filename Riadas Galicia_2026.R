@@ -214,7 +214,7 @@ for(i in 1:nrow(noticias)){
 
 print("✔ REPOSITORIO PDF COMPLETO ACTUALIZADO")
 
-  #CREO CARPETA PÚBLICA E ÍNDICE
+
 
 library(tidyverse)
 library(pagedown)
@@ -227,16 +227,16 @@ dir.create("pdf", showWarnings = FALSE)
 
 # ---------------------------------------------------------
 # 2. EJEMPLO: LISTA DE PDFs GENERADOS
-# (esto lo reemplazas con tu pipeline real)
+
 # ---------------------------------------------------------
 
 pdf_files <- list.files("pdf", pattern = "\\.pdf$", full.names = FALSE)
 
 # ---------------------------------------------------------
-# 3. URL DEL REPOSITORIO (CAMBIA ESTO)
+# 3. URL DEL REPOSITORIO
 # ---------------------------------------------------------
 
-base_url <- "https://TU_USUARIO.github.io/TU_REPO/pdf/"
+base_url <- "https://celiaolabarria.github.io/riadas-galicia-2026/pdf/"
 
 # ---------------------------------------------------------
 # 4. CREAR ÍNDICE HTML PÚBLICO
@@ -278,7 +278,7 @@ indice <- crear_indice(pdf_files, base_url)
 message("✔ Índice creado: ", indice)
 
 # ---------------------------------------------------------
-# 6. LINK PARA TU DOCUMENTO (LO QUE PEDÍAS)
+# 6. LINK PARA DOCUMENTO
 # ---------------------------------------------------------
 
 link_html <- paste0(
